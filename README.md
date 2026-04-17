@@ -9,20 +9,15 @@
 
 ## لقطات من التنفيذ الحالي
 
-الصور التالية في **جذر المشروع** (بجانب `README.md`):
+الملفات في جذر المشروع: [`finished-proj-desktop.png`](./finished-proj-desktop.png) · [`finished-proj-phone.png`](./finished-proj-phone.png)
 
-| الوصف | الملف |
-| ----- | ----- |
-| عرض سطح مكتب / عرض واسع | [`Finished Proj.png`](./Finished%20Proj.png) |
-| عرض هاتف (عرض ضيق) | [`Finished Proj-PhoneView.png`](./Finished%20Proj-PhoneView.png) |
+### عرض سطح المكتب (عرض واسع)
 
-معاينة داخل المستند:
+![لقطة شاشة — الصفحة الرئيسية بعرض سطح مكتب](./finished-proj-desktop.png)
 
-![عرض واسع — Finished Proj](./Finished%20Proj.png)
+### عرض الهاتف (عرض ضيق)
 
-![عرض هاتف — Finished Proj-PhoneView](./Finished%20Proj-PhoneView.png)
-
-> إذا لم تظهر الصور في المعاينة، تأكد أن الملفات موجودة في نفس مجلد `README.md` وأن الأسماء تطابق تمامًا (بما في ذلك المسافات في اسم الملف).
+![لقطة شاشة — نفس الصفحة بعرض هاتف](./finished-proj-phone.png)
 
 ---
 
