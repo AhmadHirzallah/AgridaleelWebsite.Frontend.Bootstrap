@@ -208,16 +208,18 @@
 							</div>
 						</div>
 						<div class="col-12 col-md-auto">
-							<div
-								class="text-white bg--primary px-3 d-flex align-items-center gap-3 fs-3 text-nowrap"
-							>
-								<span
-									><img
-										src="./assets/imgs/03.search-icon.png"
-										alt="Search Icon"
-								/></span>
-								<span> بحث متقدم </span>
-							</div>
+							<a href="#" class="text-decoration-none">
+								<div
+									class="text-white bg--primary px-3 d-flex align-items-center gap-3 fs-3 text-nowrap"
+								>
+									<span
+										><img
+											src="./assets/imgs/03.search-icon.png"
+											alt="Search Icon"
+									/></span>
+									<span> بحث متقدم </span>
+								</div>
+							</a>
 						</div>
 					</div>
 					<form>
@@ -526,7 +528,7 @@
 								<div class="row">
 									<div class="col-12">
 										<div
-											class="site-owl owl-theme"
+											class="site-owl site-owl--news-pair owl-theme"
 											data-site-owl="first-carousel"
 										>
 											<section
@@ -537,105 +539,247 @@
 													id="first-carousel"
 													class="owl-carousel site-owl__carousel"
 												>
+													<!--
+														Vertical “pair” pattern: ONE .item = ONE Owl slide = TWO
+														full-width news blocks stacked (each col-12 behavior).
+														`items: 1` in JS → one slide visible; prev/next swaps the whole pair.
+														Add more .item blocks for more pairs (slide 2 = next two stories, …).
+													-->
 													<div class="item">
-														<!-- ? Image of the Carousel Item -->
-														<div>
-															<img
-																src="./assets/imgs/07.Carousel.1.jpg"
-																alt="اجتماع عمال قطاع الزراعي"
-																class="mb-3 text-black"
-															/>
-															<!-- ? Text -->
+														<div
+															class="first-carousel-pair w-100 px-1"
+														>
 															<div
-																class="text-black fs-5 mb-1"
+																class="first-carousel-news w-100"
 															>
-																رئيس سلطة منطقة
-																العقبة الخاصة
-																ناصر الشريدة
-																يرعى حفل تكريم
-																متطوعين
-																المبادرات
-															</div>
-															<!-- ? Time Calendar -->
-															<div
-																class="text-carousel-footer bg-carousel-footer py-2 d-flex align-items-center justify-content-between"
-															>
-																<!-- ? 1) Image && Date -->
-																<div
-																	class="d-flex align-items-center justify-content-start"
+																<a
+																	href="#"
+																	class="text-decoration-none"
 																>
-																	<!-- ? Calendar Image -->
-
-																	<i
-																		class="bi bi-calendar me-3 fs-5 w-auto text-white align-self-center"
-																	></i>
-																	<!-- ? Date  -->
+																	<img
+																		src="./assets/imgs/07.Carousel.1.jpg"
+																		alt="اجتماع عمال قطاع الزراعي"
+																		class="mb-3 img-fluid w-100 rounded-0"
+																	/>
 																	<div
-																		class="me-3"
+																		class="text-black fs-5 mb-1"
 																	>
-																		14/12/2017
+																		رئيس
+																		سلطة
+																		منطقة
+																		العقبة
+																		الخاصة
+																		ناصر
+																		الشريدة
+																		يرعى حفل
+																		تكريم
+																		متطوعين
+																		المبادرات
+																	</div>
+																</a>
+																<div
+																	class="text-carousel-footer bg-carousel-footer py-2 d-flex align-items-center justify-content-between"
+																>
+																	<div
+																		class="d-flex align-items-center justify-content-start"
+																	>
+																		<i
+																			class="bi bi-calendar me-3 fs-5 w-auto text-white align-self-center"
+																		></i>
+																		<div
+																			class="me-3"
+																		>
+																			14/12/2017
+																		</div>
+																	</div>
+																	<div
+																		class="d-flex align-items-center justify-content-start gap-3 ms-2"
+																	>
+																		<i
+																			class="bi bi-eye me-3 fs-5 w-auto text-white align-self-center"
+																		></i>
+																		<span
+																			>0</span
+																		>
 																	</div>
 																</div>
-																<!-- ? 2) Eye and Number of Visits -->
-																<div
-																	class="d-flex align-items-center justify-content-start gap-3 ms-2"
+															</div>
+															<div
+																class="first-carousel-news w-100"
+															>
+																<a
+																	href="#"
+																	class="text-decoration-none"
 																>
-																	<i
-																		class="bi bi-eye me-3 fs-5 w-auto text-white align-self-center"
-																	></i>
-																	<span
-																		>0</span
+																	<img
+																		src="./assets/imgs/07.Carousel.2.jpg"
+																		alt="فعالية قطاع الزراعي"
+																		class="mb-3 img-fluid w-100 rounded-0"
+																	/>
+																	<div
+																		class="text-black fs-5 mb-1"
 																	>
+																		اقامة
+																		المنتدى
+																		والمعرض
+																		الزراعي
+																		الأول من
+																		نوعه في
+																		عمان
+																	</div>
+																</a>
+																<div
+																	class="text-carousel-footer bg-carousel-footer py-2 d-flex align-items-center justify-content-between"
+																>
+																	<div
+																		class="d-flex align-items-center justify-content-start"
+																	>
+																		<i
+																			class="bi bi-calendar me-3 fs-5 w-auto text-white align-self-center"
+																		></i>
+																		<div
+																			class="me-3"
+																		>
+																			14/12/2017
+																		</div>
+																	</div>
+																	<div
+																		class="d-flex align-items-center justify-content-start gap-3 ms-2"
+																	>
+																		<i
+																			class="bi bi-eye me-3 fs-5 w-auto text-white align-self-center"
+																		></i>
+																		<span
+																			>0</span
+																		>
+																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
+													<!-- Next “page”: replace inner blocks with your next two real news items -->
 													<div class="item">
-														<!-- ? Image of the Carousel Item -->
-														<div>
-															<img
-																src="./assets/imgs/07.Carousel.2.jpg"
-																alt="فعالية قطاع الزراعي"
-																class="mb-3 text-black"
-															/>
-														</div>
-														<!-- ? Text -->
 														<div
-															class="text-black fs-5 mb-1"
+															class="first-carousel-pair w-100 px-1"
 														>
-															اقامة المنتدى
-															والمعرض الزراعي
-															الأول من نوعه في
-															عمان
-														</div>
-														<!-- ? Time Calendar -->
-														<div
-															class="text-carousel-footer bg-carousel-footer py-2 d-flex align-items-center justify-content-between"
-														>
-															<!-- ? 1) Image && Date -->
 															<div
-																class="d-flex align-items-center justify-content-start"
+																class="first-carousel-news w-100"
 															>
-																<!-- ? Calendar Image -->
-
-																<i
-																	class="bi bi-calendar me-3 fs-5 w-auto text-white align-self-center"
-																></i>
-																<!-- ? Date  -->
-																<div
-																	class="me-3"
+																<a
+																	href="#"
+																	class="text-decoration-none"
 																>
-																	14/12/2017
+																	<img
+																		src="./assets/imgs/07.Carousel.3.jpg"
+																		alt=""
+																		class="mb-3 img-fluid w-100 rounded-0"
+																	/>
+																	<div
+																		class="text-black fs-5 mb-1"
+																	>
+																		نقيب
+																		المهندسين
+																		الزراعيين
+																		ابو
+																		غنيمة
+																		يرعى حفل
+																		تخريج
+																		الزملاء
+																		المشاركين
+																		في
+																		الدورات
+																		التدريبية
+																		بالمجال
+																		الزراعي
+																		وبناء
+																		القدرات
+																		في فرع
+																		السلط
+																	</div>
+																</a>
+																<div
+																	class="text-carousel-footer bg-carousel-footer py-2 d-flex align-items-center justify-content-between"
+																>
+																	<div
+																		class="d-flex align-items-center justify-content-start"
+																	>
+																		<i
+																			class="bi bi-calendar me-3 fs-5 w-auto text-white align-self-center"
+																		></i>
+																		<div
+																			class="me-3"
+																		>
+																			01/01/2026
+																		</div>
+																	</div>
+																	<div
+																		class="d-flex align-items-center justify-content-start gap-3 ms-2"
+																	>
+																		<i
+																			class="bi bi-eye me-3 fs-5 w-auto text-white align-self-center"
+																		></i>
+																		<span
+																			>0</span
+																		>
+																	</div>
 																</div>
 															</div>
-															<!-- ? 2) Eye and Number of Visits -->
 															<div
-																class="d-flex align-items-center justify-content-start gap-3 ms-2"
+																class="first-carousel-news w-100"
 															>
-																<i
-																	class="bi bi-eye me-3 fs-5 w-auto text-white align-self-center"
-																></i>
-																<span>0</span>
+																<a
+																	href="#"
+																	class="text-decoration-none"
+																>
+																	<img
+																		src="./assets/imgs/07.Carousel.4.jpg"
+																		alt=""
+																		class="mb-3 img-fluid w-100 rounded-0"
+																	/>
+																	<div
+																		class="text-black fs-5 mb-1"
+																	>
+																		نقابة
+																		المهندسين
+																		الزراعيين
+																		والجمعية
+																		الاردنية
+																		لاعجاز
+																		القران
+																		والسنة
+																		تقيمان
+																		اليوم
+																		العلمي
+																		فأخرجنا
+																		منه خضرا
+																	</div>
+																</a>
+																<div
+																	class="text-carousel-footer bg-carousel-footer py-2 d-flex align-items-center justify-content-between"
+																>
+																	<div
+																		class="d-flex align-items-center justify-content-start"
+																	>
+																		<i
+																			class="bi bi-calendar me-3 fs-5 w-auto text-white align-self-center"
+																		></i>
+																		<div
+																			class="me-3"
+																		>
+																			01/01/2026
+																		</div>
+																	</div>
+																	<div
+																		class="d-flex align-items-center justify-content-start gap-3 ms-2"
+																	>
+																		<i
+																			class="bi bi-eye me-3 fs-5 w-auto text-white align-self-center"
+																		></i>
+																		<span
+																			>0</span
+																		>
+																	</div>
+																</div>
 															</div>
 														</div>
 													</div>
@@ -717,159 +861,179 @@
 											<div
 												class="col-12 col-md-6 pt-2 bg-light-grey ps-2 ps-lg-4 pb-4 d-flex flex-column gap-2"
 											>
-												<div
-													class="row mb-0 bg-white pt-2 pb-3 gx-0 pe-2"
+												<a
+													href="#"
+													class="text-decoration-none"
 												>
-													<div class="col-6">
-														<img
-															src="./assets/imgs/09.post1.jpg"
-															alt="card-1"
-															class="img-fluid"
-														/>
-													</div>
+													<div
+														class="row mb-0 bg-white pt-2 pb-3 gx-0 pe-2"
+													>
+														<div class="col-6">
+															<img
+																src="./assets/imgs/09.post1.jpg"
+																alt="card-1"
+																class="img-fluid"
+															/>
+														</div>
 
-													<div class="col-6">
-														<p
-															class="align-self-start text-black align-self-stretch fs-6 mb-0 pe-3"
-														>
-															افتتاح اليوم العلمي
-															في نقابة المهندسين
-															الزراعيين
-														</p>
+														<div class="col-6">
+															<p
+																class="align-self-start text-black align-self-stretch fs-6 mb-0 pe-3"
+															>
+																افتتاح اليوم
+																العلمي في نقابة
+																المهندسين
+																الزراعيين
+															</p>
+														</div>
 													</div>
-												</div>
-												<div class="row mb-0 gx-0">
-													<div class="col-12">
-														<div
-															class="row g-2 fs-5 text-black bg-light-grey"
-														>
-															<div class="col-6">
+													<div class="row mb-0 gx-0">
+														<div class="col-12">
+															<div
+																class="row g-2 fs-5 text-black bg-light-grey"
+															>
 																<div
-																	class="bg-white d-flex align-items-center justify-content-start gap-2 post-font-color p-2 h-100"
+																	class="col-6"
 																>
-																	<img
-																		src="./assets/imgs/10.post-calendar-icon.png"
-																		alt="calendar-icon"
-																		class="img-fluid post-meta-icon"
-																	/>
-																	<span
-																		>11/12/2017</span
+																	<div
+																		class="bg-white d-flex align-items-center justify-content-start gap-2 post-font-color p-2 h-100"
 																	>
+																		<img
+																			src="./assets/imgs/10.post-calendar-icon.png"
+																			alt="calendar-icon"
+																			class="img-fluid post-meta-icon"
+																		/>
+																		<span
+																			>11/12/2017</span
+																		>
+																	</div>
 																</div>
-															</div>
-															<div class="col-6">
 																<div
-																	class="bg-white d-flex align-items-center justify-content-start gap-2 post-font-color p-2 h-100"
+																	class="col-6"
 																>
-																	<img
-																		src="./assets/imgs/10.post-clock-icon.png"
-																		alt="clock-icon"
-																		class="img-fluid post-meta-icon"
-																	/>
-																	<span
-																		>12:00
-																		AM</span
+																	<div
+																		class="bg-white d-flex align-items-center justify-content-start gap-2 post-font-color p-2 h-100"
 																	>
+																		<img
+																			src="./assets/imgs/10.post-clock-icon.png"
+																			alt="clock-icon"
+																			class="img-fluid post-meta-icon"
+																		/>
+																		<span
+																			>12:00
+																			AM</span
+																		>
+																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
-												</div>
-												<div class="row mb-0 gx-0">
-													<div
-														class="col-12 d-flex align-items-center justify-content-start gap-2 bg-white px-2 py-2"
-													>
-														<img
-															src="./assets/imgs/10.post-building-icon.png"
-															alt="building-icon"
-															class="img-fluid post-meta-icon"
-														/>
-														<p
-															class="fs-6 post-font-color mb-0"
+													<div class="row mb-0 gx-0">
+														<div
+															class="col-12 d-flex align-items-center justify-content-start gap-2 bg-white px-2 py-2 mt-2"
 														>
-															نقابة المهندسين
-															الزراعيين
-														</p>
+															<img
+																src="./assets/imgs/10.post-building-icon.png"
+																alt="building-icon"
+																class="img-fluid post-meta-icon"
+															/>
+															<p
+																class="fs-6 post-font-color mb-0"
+															>
+																نقابة المهندسين
+																الزراعيين
+															</p>
+														</div>
 													</div>
-												</div>
+												</a>
 											</div>
 											<div
 												class="col-12 col-md-6 pt-2 bg-light-grey ps-2 ps-lg-4 pb-4 d-flex flex-column gap-2"
 											>
-												<div
-													class="row mb-0 bg-white pt-2 pb-3 gx-0 pe-2"
+												<a
+													href="#"
+													class="text-decoration-none"
 												>
-													<div class="col-6">
-														<img
-															src="./assets/imgs/09.post2.jpg"
-															alt="card-2"
-															class="img-fluid"
-														/>
+													<div
+														class="row mb-0 bg-white pt-2 pb-3 gx-0 pe-2"
+													>
+														<div class="col-6">
+															<img
+																src="./assets/imgs/09.post2.jpg"
+																alt="card-2"
+																class="img-fluid"
+															/>
+														</div>
+														<div class="col-6">
+															<p
+																class="text-black fs-6 mb-0 pe-3"
+															>
+																افتتاح الورشة
+																التدريبية
+																الثالثة لتصنيع
+																الشوكلاته
+															</p>
+														</div>
 													</div>
-													<div class="col-6">
-														<p
-															class="text-black fs-6 mb-0 pe-3"
-														>
-															افتتاح الورشة
-															التدريبية الثالثة
-															لتصنيع الشوكلاته
-														</p>
-													</div>
-												</div>
-												<div class="row mb-0 gx-0">
-													<div class="col-12">
-														<div
-															class="row g-2 fs-5 text-black bg-light-grey"
-														>
-															<div class="col-6">
+													<div class="row mb-0 gx-0">
+														<div class="col-12">
+															<div
+																class="row g-2 fs-5 text-black bg-light-grey"
+															>
 																<div
-																	class="bg-white d-flex align-items-center justify-content-start gap-3 post-font-color p-2 h-100"
+																	class="col-6"
 																>
-																	<img
-																		src="./assets/imgs/10.post-calendar-icon.png"
-																		alt="calendar-icon"
-																		class="img-fluid post-meta-icon"
-																	/>
-																	<span
-																		>26/11/2017</span
+																	<div
+																		class="bg-white d-flex align-items-center justify-content-start gap-3 post-font-color p-2 h-100"
 																	>
+																		<img
+																			src="./assets/imgs/10.post-calendar-icon.png"
+																			alt="calendar-icon"
+																			class="img-fluid post-meta-icon"
+																		/>
+																		<span
+																			>26/11/2017</span
+																		>
+																	</div>
 																</div>
-															</div>
-															<div class="col-6">
 																<div
-																	class="bg-white d-flex align-items-center justify-content-start gap-3 post-font-color p-2 h-100"
+																	class="col-6"
 																>
-																	<img
-																		src="./assets/imgs/10.post-clock-icon.png"
-																		alt="clock-icon"
-																		class="img-fluid post-meta-icon"
-																	/>
-																	<span
-																		>12:00
-																		AM</span
+																	<div
+																		class="bg-white d-flex align-items-center justify-content-start gap-3 post-font-color p-2 h-100"
 																	>
+																		<img
+																			src="./assets/imgs/10.post-clock-icon.png"
+																			alt="clock-icon"
+																			class="img-fluid post-meta-icon"
+																		/>
+																		<span
+																			>12:00
+																			AM</span
+																		>
+																	</div>
 																</div>
 															</div>
 														</div>
 													</div>
-												</div>
-												<div class="row mb-0 gx-0">
-													<div
-														class="col-12 d-flex align-items-center justify-content-start gap-3 bg-white px-2 py-2"
-													>
-														<img
-															src="./assets/imgs/10.post-building-icon.png"
-															alt="building-icon"
-															class="img-fluid post-meta-icon"
-														/>
-														<p
-															class="fs-6 post-font-color mb-0"
+													<div class="row mb-0 gx-0">
+														<div
+															class="col-12 d-flex align-items-center justify-content-start gap-3 bg-white px-2 py-2 mt-2"
 														>
-															نقابة المهندسين
-															الزراعيين
-														</p>
+															<img
+																src="./assets/imgs/10.post-building-icon.png"
+																alt="building-icon"
+																class="img-fluid post-meta-icon"
+															/>
+															<p
+																class="fs-6 post-font-color mb-0"
+															>
+																نقابة المهندسين
+																الزراعيين
+															</p>
+														</div>
 													</div>
-												</div>
+												</a>
 											</div>
 										</div>
 									</div>
@@ -881,18 +1045,28 @@
 									<div class="col-4">
 										<div class="row">
 											<div class="col-12 mb-2">
-												<img
-													src="./assets/imgs/11.1.Advertisemnt.small.png"
-													alt="ad1"
-													class="img-fluid w-100"
-												/>
+												<button
+													class="bg-transparent border-0 p-0"
+													type="button"
+												>
+													<img
+														src="./assets/imgs/11.1.Advertisemnt.small.png"
+														alt="ad1"
+														class="img-fluid w-100"
+													/>
+												</button>
 											</div>
 											<div class="col-12">
-												<img
-													src="./assets/imgs/11.1.Advertisemnt.small.png"
-													alt="ad1"
-													class="img-fluid w-100"
-												/>
+												<button
+													class="bg-transparent border-0 p-0"
+													type="button"
+												>
+													<img
+														src="./assets/imgs/11.1.Advertisemnt.small.png"
+														alt="ad1"
+														class="img-fluid w-100"
+													/>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -900,11 +1074,16 @@
 									<div class="col-4">
 										<div class="row">
 											<div class="col-12">
-												<img
-													src="./assets/imgs/11.2.Advertisemnt.big.png"
-													alt="ad1"
-													class="img-fluid w-100"
-												/>
+												<button
+													class="bg-transparent border-0 p-0"
+													type="button"
+												>
+													<img
+														src="./assets/imgs/11.2.Advertisemnt.big.png"
+														alt="ad1"
+														class="img-fluid w-100"
+													/>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -912,18 +1091,28 @@
 									<div class="col-4">
 										<div class="row">
 											<div class="col-12 mb-2">
-												<img
-													src="./assets/imgs/11.1.Advertisemnt.small.png"
-													alt="ad1"
-													class="img-fluid w-100"
-												/>
+												<button
+													class="bg-transparent border-0 p-0"
+													type="button"
+												>
+													<img
+														src="./assets/imgs/11.1.Advertisemnt.small.png"
+														alt="ad1"
+														class="img-fluid w-100"
+													/>
+												</button>
 											</div>
 											<div class="col-12">
-												<img
-													src="./assets/imgs/11.1.Advertisemnt.small.png"
-													alt="ad1"
-													class="img-fluid w-100"
-												/>
+												<button
+													class="bg-transparent border-0 p-0"
+													type="button"
+												>
+													<img
+														src="./assets/imgs/11.1.Advertisemnt.small.png"
+														alt="ad1"
+														class="img-fluid w-100"
+													/>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -1115,6 +1304,7 @@
 					autoplayTimeout: 5000,
 					autoplayHoverPause: true,
 					smartSpeed: 600,
+					/* One slide = one .item = vertical pair of full-width cards (see HTML) */
 					responsive: {
 						0: { items: 1 },
 					},

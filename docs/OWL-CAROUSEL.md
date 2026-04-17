@@ -19,7 +19,8 @@ Official references (keep these handy):
 5. [Layout modifiers (position & direction)](#5-layout-modifiers-position--direction)  
 6. [Recipes](#6-recipes)  
 7. [Common mistakes](#7-common-mistakes)  
-8. [Optional: full custom dots (advanced)](#8-optional-full-custom-dots-advanced)
+8. [Optional: full custom dots (advanced)](#8-optional-full-custom-dots-advanced)  
+9. [Recipe: vertical pair carousel (`#first-carousel`)](#9-recipe-vertical-pair-carousel-first-carousel)
 
 ---
 
@@ -217,6 +218,37 @@ Only worth it when marketing/design demands fixed markup; otherwise **`dotsConta
 
 ---
 
+## 9. Recipe: vertical pair carousel (`#first-carousel`)
+
+**Goal:** Show **two** news cards **stacked vertically** (each ~`col-12` width), but **not** `items: 2` (which puts **two Owl items side-by-side** at 50% / 50%). One **Prev / Next** still advances everything together.
+
+**Idea:** Owl counts **slides** by **`.item`** children. Each **`.item`** is **one** slide. Put **both** news cards **inside** the same `.item`, stacked with flexbox (`flex-direction: column`). In JS use **`items: 1`** so Owl shows **one** slide at a time (that slide happens to contain two cards).
+
+| Approach | Pros | Cons |
+|----------|------|------|
+| **`items: 2`** (two `.item`s) | Simple HTML | Always **horizontal** strip of two Owl items (50/50). |
+| **Compound slide** (this recipe) | Vertical stack, full width each card | You group stories in **pairs** in HTML (each `.item` = one pair). |
+| **Two carousels + sync JS** | Could split odd/even | More JS, two inits, must keep indices in sync. |
+
+**HTML shape (copy per slide):**
+
+```html
+<div class="item">
+  <div class="first-carousel-pair w-100">
+    <div class="first-carousel-news w-100">…news A…</div>
+    <div class="first-carousel-news w-100">…news B…</div>
+  </div>
+</div>
+```
+
+**JS:** `responsive: { 0: { items: 1 } }` (one slide = one `.item`).
+
+**CSS:** Block modifier **`site-owl--news-pair`** on the `site-owl` root + rules for `.first-carousel-pair` / images (see `css/style.css`).
+
+**Adding more pages:** Duplicate the whole `.item` … `/div>` block for the next **pair** of stories. Prev/next moves to the **next pair**, not to a single half-width tile.
+
+---
+
 ## File map (this repo)
 
 | File | Role |
@@ -226,9 +258,9 @@ Only worth it when marketing/design demands fixed markup; otherwise **`dotsConta
 | `css/owl.carousel.min.css` | Core layout (stage, items) |
 | `css/owl.theme.default.min.css` | Default dot / nav skin (partially mirrored in `style.css`) |
 | `css/style.css` | **`site-owl`** tokens + modifiers |
-| `index.html` | Reference instance **`site-owl-hero`** |
+| `index.html` | Reference **`site-owl-hero`** + news **`#first-carousel`** (vertical pair pattern, §9) |
 | **`Carousel.html`** | **Standalone starter page** — minimal markup + init; copy the file (and assets above) into the next project |
 
 ---
 
-*Last aligned with project structure: hero header carousel (`#site-owl-hero`).*
+*Last aligned with project structure: hero (`#site-owl-hero`) + news carousel compound slides (`#first-carousel`, §9).*

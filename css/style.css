@@ -320,6 +320,22 @@ body {
 	min-height: var(--site-owl-slide-min-height);
 }
 
+/* أحدث الأخبار: each slide = two stacked full-width cards (not two owl items side-by-side) */
+.site-owl--news-pair .site-owl__slides .site-owl__carousel .owl-item img {
+	min-height: 10rem;
+	max-height: 14rem;
+}
+
+.site-owl--news-pair .first-carousel-pair {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.site-owl--news-pair .first-carousel-news {
+	width: 100%;
+}
+
 .site-owl__slides .site-owl__dots {
 	margin-top: 0.5rem;
 }
