@@ -13,11 +13,11 @@
 			rel="stylesheet"
 			href="./css/css-bs-icons/bootstrap-icons.min.css"
 		/>
+		<link rel="stylesheet" href="./css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="./css/owl.theme.default.min.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		<a class="skip-link" href="#main-content">تخطي إلى المحتوى</a>
-
 		<nav class="site-nav" aria-label="Primary">
 			<div class="container-fluid px-3 py-2">
 				<div
@@ -49,15 +49,15 @@
 						<!-- ! first row -->
 						<div class="row">
 							<div
-								class="col-md-12 d-flex justify-content-end gap-2 pb-4 gap-sm-1 justify-content-sm-center d-md-flex justify-content-md-end gap-md-4"
+								class="col-md-12 d-flex justify-content-end gap-2 pb-4 gap-sm-1 justify-content-sm-center d-md-flex justify-content-md-end gap-md-4 gap-sm-3"
 							>
 								<button
-									class="btn btn--secondary rounded-0 text-white border-0 px-5 fs-4 px-sm-2 px-md-4"
+									class="btn btn--secondary rounded-0 text-white border-0 px-5 fs-4 px-sm-3 px-md-4"
 								>
 									تسجيل الدخول
 								</button>
 								<button
-									class="btn btn--primary rounded-0 text-white border-0 px-5 fs-4 px-sm-2 px-md-4"
+									class="btn btn--primary rounded-0 text-white border-0 px-5 fs-4 px-sm-3 px-md-4"
 								>
 									حساب جديد
 								</button>
@@ -94,20 +94,270 @@
 			</div>
 		</nav>
 
-		<!--
-			<header> — intro / hero band. Spacing: add Bootstrap utilities on __inner.
-		-->
-		<header class="site-header">
-			<div class="site-header__inner container py-4">
-				<h1 class="mb-2">Page title</h1>
-				<p class="mb-3">
-					Short lead. Theme colors from css/style.css :root; spacing
-					from classes here.
-				</p>
-				<div class="d-flex flex-wrap gap-2">
-					<a class="btn btn--primary" href="#">Primary</a>
-					<a class="btn btn--secondary" href="#">Secondary</a>
-					<button class="btn btn--ghost" type="button">Ghost</button>
+		<header class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-6">
+					<div class="owl-carousel owl-theme">
+						<div class="item">
+							<img
+								class="img-fluid"
+								src="./assets/imgs/02.Agridaleel-slider-1.png"
+								alt=""
+							/>
+						</div>
+						<div class="item">
+							<img
+								class="img-fluid"
+								src="./assets/imgs/02.Agridaleel-slider2.png"
+								alt=""
+							/>
+						</div>
+						<div class="item">
+							<img
+								class="img-fluid"
+								src="./assets/imgs/02.Agridaleel-slider-3.png"
+								alt=""
+							/>
+						</div>
+						<div class="item">
+							<img
+								class="img-fluid"
+								src="./assets/imgs/02.Agridaleel-slider-4.png"
+								alt=""
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-6">
+					<div
+						class="row align-items-stretch g-0 gap-md-2 flex-column flex-md-row"
+					>
+						<div class="col-12 col-md">
+							<div
+								class="text-white bg--primary px-3 d-flex align-items-center gap-3 fs-3 mb-2 mb-md-0 w-100"
+							>
+								<span
+									><img
+										src="./assets/imgs/03.search-icon.png"
+										alt="Search Icon"
+								/></span>
+								<span> البحث في دليل الشركات </span>
+							</div>
+						</div>
+						<div class="col-12 col-md-auto">
+							<div
+								class="text-white bg--primary px-3 d-flex align-items-center gap-3 fs-3 text-nowrap"
+							>
+								<span
+									><img
+										src="./assets/imgs/03.search-icon.png"
+										alt="Search Icon"
+								/></span>
+								<span> بحث متقدم </span>
+							</div>
+						</div>
+					</div>
+					<form>
+						<div class="row mt-2 bg-white py-2">
+							<!-- ! For All Labels -->
+							<div
+								class="col-3 d-flex gap-3 align-items-center mb-1"
+							>
+								<div class="row">
+									<div class="col-12 mb-3">
+										<span
+											class="d-flex align-items-center gap-3 fs-5 text-black-50"
+										>
+											<img
+												src="./assets/imgs/04.s-icon-1.png"
+												alt="Search Icon"
+											/>
+											<label
+												for="companyName"
+												class="fs-5 text-black"
+												>اسم الشركة</label
+											>
+										</span>
+									</div>
+									<div class="col-12 mb-3">
+										<span
+											class="d-flex align-items-center gap-3 fs-5 text-black-50"
+										>
+											<img
+												src="./assets/imgs/04.s-icon-2.png"
+												alt="Search Icon"
+											/>
+											<label
+												for="companyName"
+												class="fs-5 text-black"
+												>المحافظة</label
+											>
+										</span>
+									</div>
+									<div class="col-12 mb-3">
+										<span
+											class="d-flex align-items-center gap-3 fs-5 text-black-50"
+										>
+											<img
+												src="./assets/imgs/04.s-icon-3.png"
+												alt="Search Icon"
+											/>
+											<label
+												for="companyName"
+												class="fs-5 text-black"
+												>القطاع</label
+											>
+										</span>
+									</div>
+									<div class="col-12 mb-3">
+										<span
+											class="d-flex align-items-center gap-3 fs-5 text-black-50"
+										>
+											<img
+												src="./assets/imgs/04.s-icon-4.png"
+												alt="Search Icon"
+											/>
+											<label
+												for="companyName"
+												class="fs-5 text-black"
+												>نوع الانتاج
+											</label>
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<!-- ! For All Inputs - use (col) for each input so it s -->
+							<div
+								class="col d-flex gap-3 align-items-center mb-1"
+							>
+								<div class="row">
+									<div class="col-12 mb-1">
+										<input
+											type="text"
+											class="form-control rounded-0 bg-input-grey fs-5 text-black-50"
+											id="companyName"
+											placeholder="ادخل اسم الشركة"
+										/>
+									</div>
+									<div class="col-12 mb-1">
+										<select
+											class="form-select rounded-0 bg-input-grey fs-5 text-black-50"
+											aria-label="Default select example"
+										>
+											<option selected>-- اختر --</option>
+											<option value="1">
+												محافظة العاصمة
+											</option>
+											<option value="2">
+												محافظة إربد
+											</option>
+											<option value="3">
+												محافظة الزرقاء
+											</option>
+											<option value="4">
+												محافظة المفرق
+											</option>
+											<option value="5">
+												محافظة الطفيلة
+											</option>
+											<option value="6">
+												محافظة معان
+											</option>
+											<option value="7">
+												محافظة الكرك
+											</option>
+											<option value="8">
+												محافظة العقبة
+											</option>
+											<option value="9">
+												محافظة عجلون
+											</option>
+											<option value="10">
+												محافظة جرش
+											</option>
+										</select>
+									</div>
+									<div class="col-12 mb-1">
+										<select
+											class="form-select rounded-0 bg-input-grey fs-5 text-black-50"
+											aria-label="Default select example"
+										>
+											<option selected>-- اختر --</option>
+											<option value="1">
+												القطاع العام
+											</option>
+											<option value="2">
+												القطاع الخاص
+											</option>
+											<option value="3">
+												القطاع المدني
+											</option>
+											<option value="4">
+												القطاع الصناعي
+											</option>
+										</select>
+									</div>
+									<div class="col-12 mb-1">
+										<select
+											class="form-select rounded-0 bg-input-grey fs-5 text-black-50"
+											aria-label="Default select example"
+										>
+											<option selected></option>
+											<option value="1">
+												الانتاج الزراعي
+											</option>
+											<option value="2">
+												الانتاج الحيواني
+											</option>
+											<option value="3">
+												الانتاج الثروة السمكية
+											</option>
+											<option value="4">
+												الانتاج الثروة الحيوانية
+											</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 mb-1 d-flex mt-3">
+								<a
+									href="#"
+									class="btn bg-btn-search rounded-0 text-white border-0 px-5 fs-4 px-sm-3 px-md-4 align-self-stretch w-100"
+								>
+									بحث
+								</a>
+							</div>
+						</div>
+						<!-- ! Old Working Code -->
+						<!--<div
+					class="col-12 d-flex gap-3 align-items-center mb-1"
+				>
+					<div class="col-auto">
+						<span
+							class="d-flex align-items-center gap-3"
+						>
+							<img
+								src="./assets/imgs/04.s-icon-1.png"
+								alt="Search Icon"
+							/>
+							<label
+								for="companyName"
+								class="fs-5 text-black"
+								>اسم الشركة</label
+							>
+						</span>
+					</div>
+					<div class="col">
+						<input
+							type="text"
+							class="form-control rounded-0 bg-input-grey fs-5"
+							id="companyName"
+							placeholder="ادخل اسم الشركة"
+						/>
+					</div>
+				</div>-->
+					</form>
 				</div>
 			</div>
 		</header>
@@ -145,6 +395,25 @@
 			</div>
 		</footer>
 
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/owl.carousel.min.js"></script>
 		<script src="./js/bootstrap.bundle.js"></script>
+		<script>
+			jQuery(function ($) {
+				$(".owl-carousel").owlCarousel({
+					rtl: true,
+					loop: true,
+					margin: 10,
+					nav: true,
+					dots: true,
+					responsiveClass: true,
+					responsive: {
+						0: {
+							items: 1,
+						},
+					},
+				});
+			});
+		</script>
 	</body>
 </html>

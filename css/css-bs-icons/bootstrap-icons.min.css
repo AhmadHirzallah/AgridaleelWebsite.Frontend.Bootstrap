@@ -6057,7 +6057,7 @@
 .bi-type-h4::before {
 	content: "\f8dc";
 }
-.bi-type-p::before {
+.bi-type-h5::before {
 	content: "\f8dd";
 }
 .bi-type-h6::before {

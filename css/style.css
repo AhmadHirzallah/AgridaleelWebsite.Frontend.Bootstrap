@@ -244,3 +244,31 @@ body {
 	border-color: var(--brand-main);
 	color: color-mix(in srgb, var(--brand-main) 92%, black 8%);
 }
+
+.bg--primary {
+	background-color: var(--btn-primary-bg);
+}
+
+.bg-input-grey {
+	background-color: #ededed;
+}
+
+.bg-btn-search {
+	background-color: #4a6b70;
+}
+
+.bg-btn-search:hover {
+	background-color: #3a5155;
+}
+
+.bg-btn-search:active {
+	background-color: #3a5155;
+}
+
+.bg-btn-search:focus-visible {
+	background-color: #3a5155;
+}
+
+.bg-btn-search:disabled {
+	background-color: #3a5155;
+}
