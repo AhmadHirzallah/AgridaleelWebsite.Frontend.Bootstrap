@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+	<head>
+		<!--
+		  Owl Carousel 2 — starter / reuse page
+		  Copy with: js/jquery.min.js, js/owl.carousel.min.js,
+		  css/owl.carousel.min.css, css/owl.theme.default.min.css,
+		  css/style.css (.site-owl section) — see docs/OWL-CAROUSEL.md
+		  Rename id prefix site-owl-starter-* if you add another carousel on the same page.
+		-->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Carousel starter — Owl Carousel 2</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="./css/css-bs-icons/bootstrap-icons.min.css"
+		/>
+		<link rel="stylesheet" href="./css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<main class="container py-5">
+			<p class="mb-2">
+				<a href="./index.html" class="link-secondary">← الصفحة الرئيسية</a>
+			</p>
+			<h1 class="h3 mb-2">Carousel starter (<code>site-owl</code>)</h1>
+			<p class="text-muted mb-4">
+				هذه صفحة تجريبية جاهزة للنسخ: نفس هيكل
+				<code>site-owl</code>
+				المستعمل في المشروع. راجع
+				<a href="./docs/OWL-CAROUSEL.md">docs/OWL-CAROUSEL.md</a>
+				للشرح والتخصيص (نقاط فوق الصور، عمودية، متغيرات CSS).
+			</p>
+
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-10 col-xl-8">
+					<div
+						class="site-owl site-owl--dots-bottom owl-theme"
+						data-site-owl="starter"
+					>
+						<section
+							class="site-owl__slides"
+							aria-roledescription="carousel"
+							aria-label="معرض تجريبي"
+						>
+							<div
+								id="site-owl-starter"
+								class="owl-carousel site-owl__carousel"
+							>
+								<div class="item">
+									<img
+										class="img-fluid w-100"
+										src="./assets/imgs/02.Agridaleel-slider-1.png"
+										alt=""
+									/>
+								</div>
+								<div class="item">
+									<img
+										class="img-fluid w-100"
+										src="./assets/imgs/02.Agridaleel-slider2.png"
+										alt=""
+									/>
+								</div>
+								<div class="item">
+									<img
+										class="img-fluid w-100"
+										src="./assets/imgs/02.Agridaleel-slider-3.png"
+										alt=""
+									/>
+								</div>
+								<div class="item">
+									<img
+										class="img-fluid w-100"
+										src="./assets/imgs/02.Agridaleel-slider-4.png"
+										alt=""
+									/>
+								</div>
+							</div>
+
+							<section
+								class="site-owl__dots"
+								aria-label="مؤشرات الشرائح"
+							>
+								<div
+									id="site-owl-starter-dots"
+									class="owl-dots site-owl__dots-host"
+								></div>
+							</section>
+						</section>
+
+						<section
+							class="site-owl__arrows"
+							aria-label="أزرار تنقل الشرائح"
+						>
+							<button
+								type="button"
+								id="site-owl-starter-prev"
+								class="site-owl__arrow"
+							>
+								<span
+									class="site-owl__arrow-icon"
+									aria-hidden="true"
+								>
+									<i class="bi bi-chevron-right"></i>
+								</span>
+								<span class="visually-hidden"
+									>الشريحة السابقة</span
+								>
+							</button>
+							<button
+								type="button"
+								id="site-owl-starter-next"
+								class="site-owl__arrow"
+							>
+								<span
+									class="site-owl__arrow-icon"
+									aria-hidden="true"
+								>
+									<i class="bi bi-chevron-left"></i>
+								</span>
+								<span class="visually-hidden"
+									>الشريحة التالية</span
+								>
+							</button>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/owl.carousel.min.js"></script>
+		<script>
+			jQuery(function ($) {
+				var $c = $("#site-owl-starter");
+
+				$c.owlCarousel({
+					rtl: true,
+					loop: true,
+					margin: 10,
+					nav: false,
+					dots: true,
+					dotsContainer: "#site-owl-starter-dots",
+					autoplay: true,
+					autoplayTimeout: 5000,
+					autoplayHoverPause: true,
+					smartSpeed: 600,
+					responsive: {
+						0: { items: 1 },
+					},
+				});
+
+				$("#site-owl-starter-prev").on("click", function () {
+					$c.trigger("prev.owl.carousel", [600]);
+				});
+				$("#site-owl-starter-next").on("click", function () {
+					$c.trigger("next.owl.carousel", [600]);
+				});
+			});
+		</script>
+	</body>
+</html>

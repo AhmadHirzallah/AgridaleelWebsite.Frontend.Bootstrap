@@ -99,38 +99,96 @@
 		<header class="container-fluid header-bottom-border">
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-6">
+					<!-- ! Old Working OWL Carousel  -->
 					<div
-						id="hero-carousel"
-						class="owl-carousel owl-theme carousel-config"
+						class="site-owl site-owl--dots-overlay owl-theme"
+						data-site-owl="hero"
 					>
-						<div class="item">
-							<img
-								class="img-fluid w-100"
-								src="./assets/imgs/02.Agridaleel-slider-1.png"
-								alt=""
-							/>
-						</div>
-						<div class="item">
-							<img
-								class="img-fluid w-100"
-								src="./assets/imgs/02.Agridaleel-slider2.png"
-								alt=""
-							/>
-						</div>
-						<div class="item">
-							<img
-								class="img-fluid w-100"
-								src="./assets/imgs/02.Agridaleel-slider-3.png"
-								alt=""
-							/>
-						</div>
-						<div class="item">
-							<img
-								class="img-fluid w-100"
-								src="./assets/imgs/02.Agridaleel-slider-4.png"
-								alt=""
-							/>
-						</div>
+						<section
+							class="site-owl__slides"
+							aria-roledescription="carousel"
+							aria-label="معرض الصور"
+						>
+							<div
+								id="site-owl-hero"
+								class="owl-carousel site-owl__carousel"
+							>
+								<div class="item">
+									<img
+										class="img-fluid w-100"
+										src="./assets/imgs/02.Agridaleel-slider-1.png"
+										alt=""
+									/>
+								</div>
+								<div class="item">
+									<img
+										class="img-fluid w-100"
+										src="./assets/imgs/02.Agridaleel-slider2.png"
+										alt=""
+									/>
+								</div>
+								<div class="item">
+									<img
+										class="img-fluid w-100"
+										src="./assets/imgs/02.Agridaleel-slider-3.png"
+										alt=""
+									/>
+								</div>
+								<div class="item">
+									<img
+										class="img-fluid w-100"
+										src="./assets/imgs/02.Agridaleel-slider-4.png"
+										alt=""
+									/>
+								</div>
+							</div>
+
+							<section
+								class="site-owl__dots"
+								aria-label="مؤشرات الشرائح"
+							>
+								<div
+									id="site-owl-hero-dots"
+									class="owl-dots site-owl__dots-host"
+								></div>
+							</section>
+						</section>
+						<!-- ! Next and Previous Buttons Of Owl Carousel -->
+						<!--<section
+							class="site-owl__arrows"
+							aria-label="أزرار تنقل الشرائح"
+						>
+							<button
+								type="button"
+								id="site-owl-hero-prev"
+								class="site-owl__arrow"
+							>
+								<span
+									class="site-owl__arrow-icon"
+									aria-hidden="true"
+								>
+									<i class="bi bi-chevron-right"></i>
+								</span>
+								<span class="visually-hidden"
+									>الشريحة السابقة</span
+								>
+							</button>
+							<button
+								type="button"
+								id="site-owl-hero-next"
+								class="site-owl__arrow"
+							>
+								<span
+									class="site-owl__arrow-icon"
+									aria-hidden="true"
+								>
+									<i class="bi bi-chevron-left"></i>
+								</span>
+								<span class="visually-hidden"
+									>الشريحة التالية</span
+								>
+							</button>
+						</section>-->
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-12 col-lg-6">
@@ -419,34 +477,81 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="row">
-							<div
-								class="col-lg-4 col-sm-12 bg-section-bar text-white me-3 d-flex gap-3 align-items-center py-2 fs-5"
-							>
-								<span
-									><img
-										src="./assets/imgs/06.1.news-icon.png"
-										alt="news-icon"
-								/></span>
-								<p class="d-inline-block mb-0">أحدث الأخبار</p>
-							</div>
-							<div
-								class="col-lg col-sm-12 bg-section-bar text-white mx-3 d-flex gap-3 align-items-center py-2 fs-5 justify-content-between"
-							>
-								<div class="d-flex gap-3 align-items-center">
-									<span
-										><img
-											src="./assets/imgs/06.2.star-calendar.png"
-											alt="news-icon"
-									/></span>
-									<p class="d-inline-block mb-0">
-										أحدث الفعاليات
-									</p>
+							<div class="col-lg-4 col-sm-12">
+								<div class="row">
+									<div class="col-12">
+										<div
+											class="d-flex gap-3 bg-section-bar text-white align-items-center justify-content-between py-2 fs-5"
+										>
+											<div
+												class="d-flex gap-3 align-items-center mx-lg-3 mx-sm-1"
+											>
+												<span
+													><img
+														src="./assets/imgs/06.1.news-icon.png"
+														alt="news-icon"
+												/></span>
+												<p class="d-inline-block mb-0">
+													أحدث الأخبار
+												</p>
+											</div>
+											<div
+												class="d-flex gap-lg-3 gap-sm-1"
+											>
+												<i
+													class="bi bi-chevron-right fs-5 text-white fw-bold"
+												></i>
+												<i
+													class="bi bi-chevron-left fs-5 text-white fw-bold"
+												></i>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="d-inline-block">
-									<a
-										href="#"
-										class="text-white text-decoration-none show-all"
-										>عرض الكل</a
+								<div class="row">
+									<div class="col-12">
+										<!-- ! FIRST Carousel Fill below the Header -->
+									</div>
+								</div>
+							</div>
+							<div class="col-lg col-sm-12">
+								<div
+									class="bg-section-bar text-white d-flex gap-3 align-items-center py-2 fs-5 justify-content-between"
+								>
+									<div
+										class="d-flex gap-3 align-items-center mx-lg-3 mx-sm-1"
+									>
+										<span
+											><img
+												src="./assets/imgs/06.2.star-calendar.png"
+												alt="news-icon"
+										/></span>
+										<p class="d-inline-block mb-0">
+											أحدث الفعاليات
+										</p>
+									</div>
+									<div class="d-inline-block">
+										<a
+											href="#"
+											class="text-white text-decoration-none show-all"
+											>عرض الكل</a
+										>
+									</div>
+								</div>
+								<div class="row">
+									<a href="" class="col-12"
+										>1Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Excepturi consectetur,
+										quis ex sint sit quos nulla aliquid
+										cupiditate ipsa ipsam?</a
+									>
+								</div>
+								<div class="row">
+									<a href="" class="col-12"
+										>2Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Excepturi consectetur,
+										quis ex sint sit quos nulla aliquid
+										cupiditate ipsa ipsam?</a
 									>
 								</div>
 							</div>
@@ -470,43 +575,30 @@
 		<script src="./js/bootstrap.bundle.js"></script>
 		<script>
 			jQuery(function ($) {
-				var $hero = $("#hero-carousel");
+				var $hero = $("#site-owl-hero");
 
 				$hero.owlCarousel({
 					rtl: true,
 					loop: true,
 					margin: 10,
-					nav: true,
+					nav: false,
 					dots: true,
+					dotsContainer: "#site-owl-hero-dots",
 					autoplay: true,
 					autoplayTimeout: 5000,
 					autoplayHoverPause: true,
 					smartSpeed: 600,
-					navText: [
-						'<span class="carousel-config__nav-icon" aria-hidden="true"><i class="bi bi-chevron-right"></i></span>',
-						'<span class="carousel-config__nav-icon" aria-hidden="true"><i class="bi bi-chevron-left"></i></span>',
-					],
 					responsive: {
 						0: { items: 1 },
 					},
-					// Callbacks (same as .on('initialized.owl.carousel', …))
-					onInitialized: function () {
-						/* runs once after build; e.g. announce slide 1 */
-					},
-					onTranslated: function (event) {
-						/* fired after each slide change */
-						// event.item.index — current position (clone-aware)
-					},
 				});
 
-				// Programmatic control + “full API” style hooks (Owl events)
-				$hero.on("changed.owl.carousel", function (event) {
-					// event.item.count, event.item.index, event.page.index, …
+				$("#site-owl-hero-prev").on("click", function () {
+					$hero.trigger("prev.owl.carousel", [600]);
 				});
-
-				// Example: custom buttons elsewhere on the page
-				// $hero.trigger('next.owl.carousel');
-				// $hero.trigger('to.owl.carousel', [2, 300]); // go to slide index 2
+				$("#site-owl-hero-next").on("click", function () {
+					$hero.trigger("next.owl.carousel", [600]);
+				});
 			});
 		</script>
 	</body>

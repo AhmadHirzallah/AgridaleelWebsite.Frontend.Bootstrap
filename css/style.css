@@ -289,16 +289,102 @@ body {
 	color: #95dd7f !important;
 }
 
-/* Header hero — Owl injects .owl-nav / .owl-dots; nav labels come from navText in JS */
-.carousel-config.owl-theme .owl-nav [class*="owl-"] {
-	background: transparent;
+/*
+ * --- Site Owl (Owl Carousel 2) — reusable block ---
+ * Full guide: docs/OWL-CAROUSEL.md
+ * Tweak tokens on .site-owl; layout via modifiers (.site-owl--dots-overlay, …).
+ */
+.site-owl {
+	--site-owl-slide-bg: #fff;
+	--site-owl-slide-min-height: 220px;
+	/* 20px = 1.25rem */
+	--site-owl-dot-size: 1.25rem;
+	--site-owl-dot-gap: 14px;
+	--site-owl-dot-bg: #ffffff;
+	--site-owl-dot-bg-active: #55705d;
+	--site-owl-dot-radius: 30px;
+	--site-owl-dots-offset: 0.75rem;
+	--site-owl-arrow-size: 1.25rem;
+}
+
+.site-owl__slides {
+	background: var(--site-owl-slide-bg);
+}
+
+.site-owl__slides .site-owl__carousel .owl-stage-outer {
+	overflow: hidden;
+}
+
+.site-owl__slides .site-owl__carousel .owl-item img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+	min-height: var(--site-owl-slide-min-height);
+}
+
+.site-owl__slides .site-owl__dots {
+	margin-top: 0.5rem;
+}
+
+.site-owl__dots-host.owl-dots {
+	margin-top: 0;
+	text-align: center;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.site-owl.owl-theme .site-owl__dots-host button.owl-dot {
+	background: none;
+	border: none;
+	padding: 0 !important;
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.site-owl.owl-theme .site-owl__dots-host .owl-dot span {
+	width: var(--site-owl-dot-size);
+	height: var(--site-owl-dot-size);
+	margin: 5px calc(var(--site-owl-dot-gap) / 2);
+	background: var(--site-owl-dot-bg);
+	display: block;
+	border-radius: var(--site-owl-dot-radius);
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+	transition:
+		background-color 0.2s ease,
+		opacity 0.2s ease;
+}
+
+.site-owl.owl-theme .site-owl__dots-host .owl-dot.active span,
+.site-owl.owl-theme .site-owl__dots-host .owl-dot:hover span {
+	background: var(--site-owl-dot-bg-active);
+}
+
+.site-owl__arrows {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.site-owl__arrow {
+	margin: 0;
 	padding: 0;
-	margin: 0.25rem;
-	font-size: 1.25rem;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+	font-size: var(--site-owl-arrow-size);
 	line-height: 1;
 }
 
-.carousel-config .carousel-config__nav-icon {
+.site-owl__arrow:focus-visible {
+	outline: 2px solid var(--brand-main, #55705d);
+	outline-offset: 2px;
+}
+
+.site-owl__arrow-icon {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -308,6 +394,32 @@ body {
 	color: #fff;
 }
 
-.carousel-config .owl-dots {
-	margin-top: 0.5rem;
+/* Dots overlaid on the slide (add .site-owl--dots-overlay on .site-owl; dots must stay inside .site-owl__slides) */
+.site-owl.site-owl--dots-overlay .site-owl__slides {
+	position: relative;
+}
+
+.site-owl.site-owl--dots-overlay .site-owl__slides .site-owl__dots {
+	position: absolute;
+	inset-inline: 0;
+	bottom: var(--site-owl-dots-offset);
+	margin-top: 0;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.site-owl.site-owl--dots-overlay .site-owl__dots-host {
+	pointer-events: auto;
+}
+
+/* Vertical dot stack (combine with --dots-overlay if desired) */
+.site-owl.site-owl--dots-vertical .site-owl__dots-host {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.site-owl.site-owl--dots-vertical .site-owl__dots-host .owl-dot span {
+	margin: calc(var(--site-owl-dot-gap) / 4) 5px;
 }
