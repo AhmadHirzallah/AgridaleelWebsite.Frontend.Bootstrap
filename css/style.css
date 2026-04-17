@@ -75,7 +75,7 @@
 		var(--brand-main) 12%,
 		color-mix(in srgb, var(--brand-secondary) 8%, white 92%)
 	);
-	--footer-bg: var(--brand-main);
+	--footer-bg: #486c52;
 	--footer-fg: color-mix(in srgb, var(--brand-secondary) 15%, white 85%);
 }
 
@@ -171,8 +171,6 @@ body {
 .site-footer {
 	background: var(--footer-bg);
 	color: var(--footer-fg);
-	border-top: 1px solid
-		color-mix(in srgb, var(--brand-secondary) 25%, transparent);
 }
 
 /* --- Buttons: use with Bootstrap .btn (spacing + radius from Bootstrap) --- */
@@ -422,4 +420,61 @@ body {
 
 .site-owl.site-owl--dots-vertical .site-owl__dots-host .owl-dot span {
 	margin: calc(var(--site-owl-dot-gap) / 4) 5px;
+}
+
+/* ! Text Color of Carousel footer */
+.text-carousel-footer {
+	color: #203c3f !important;
+}
+
+.calendar-image {
+	height: 0.8rem !important;
+}
+
+.bg-carousel-footer {
+	background-color: #afafaf !important;
+}
+
+.bg-light {
+	background-color: #eeeeee !important;
+}
+
+.post-font-color {
+	color: #203c3f !important;
+}
+
+/* Column “gutter” behind stacked post tiles (white blocks sit on top) */
+.bg-light-grey {
+	background-color: #e8e8e8;
+}
+
+.post-meta-icon {
+	max-height: 1.25rem;
+	width: auto;
+}
+
+/* One line per link; row can wrap so items stay aligned (avoid parent text-nowrap) */
+.last-nav-links > a {
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+
+.last-nav-links a:hover {
+	color: #95dd7f !important;
+}
+
+/* Footer link lists: bigger bullets, normal link size (see `::marker`) */
+.site-footer .footer-links-bullets > li::marker {
+	font-size: 1.65em;
+	color: inherit;
+}
+
+.footer-border {
+	border-top: 8px solid #1d3c70;
+}
+
+/* Thin divider above the copyright strip — thick white border blended into next section’s white */
+.site-footer .first-footer-border {
+	padding-bottom: 0.75rem;
+	border-block-end: 2px solid rgba(255, 255, 255, 0.92);
 }

@@ -477,11 +477,12 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="row">
-							<div class="col-lg-4 col-sm-12">
+							<div class="col-lg-4 col-sm-12 bg-light-grey">
+								<!-- ! Header of the First Section -->
 								<div class="row">
 									<div class="col-12">
 										<div
-											class="d-flex gap-3 bg-section-bar text-white align-items-center justify-content-between py-2 fs-5"
+											class="d-flex gap-3 bg-section-bar text-white align-items-center justify-content-between py-2 fs-5 mb-2"
 										>
 											<div
 												class="d-flex gap-3 align-items-center mx-lg-3 mx-sm-1"
@@ -498,61 +499,434 @@
 											<div
 												class="d-flex gap-lg-3 gap-sm-1"
 											>
-												<i
-													class="bi bi-chevron-right fs-5 text-white fw-bold"
-												></i>
-												<i
-													class="bi bi-chevron-left fs-5 text-white fw-bold"
-												></i>
+												<button
+													type="button"
+													class="bg-transparent border-0"
+													id="first-carousel-next"
+												>
+													<i
+														class="bi bi-chevron-right fs-5 text-white fw-bold"
+													></i>
+												</button>
+												<button
+													type="button"
+													class="bg-transparent border-0"
+													id="first-carousel-prev"
+												>
+													<i
+														class="bi bi-chevron-left fs-5 text-white fw-bold"
+													></i>
+												</button>
 											</div>
 										</div>
 									</div>
 								</div>
+
+								<!-- ! FIRST Carousel Fill below the Header -->
 								<div class="row">
 									<div class="col-12">
-										<!-- ! FIRST Carousel Fill below the Header -->
+										<div
+											class="site-owl owl-theme"
+											data-site-owl="first-carousel"
+										>
+											<section
+												class="site-owl__slides"
+												aria-label="أحدث الأخبار"
+											>
+												<div
+													id="first-carousel"
+													class="owl-carousel site-owl__carousel"
+												>
+													<div class="item">
+														<!-- ? Image of the Carousel Item -->
+														<div>
+															<img
+																src="./assets/imgs/07.Carousel.1.jpg"
+																alt="اجتماع عمال قطاع الزراعي"
+																class="mb-3 text-black"
+															/>
+															<!-- ? Text -->
+															<div
+																class="text-black fs-5 mb-1"
+															>
+																رئيس سلطة منطقة
+																العقبة الخاصة
+																ناصر الشريدة
+																يرعى حفل تكريم
+																متطوعين
+																المبادرات
+															</div>
+															<!-- ? Time Calendar -->
+															<div
+																class="text-carousel-footer bg-carousel-footer py-2 d-flex align-items-center justify-content-between"
+															>
+																<!-- ? 1) Image && Date -->
+																<div
+																	class="d-flex align-items-center justify-content-start"
+																>
+																	<!-- ? Calendar Image -->
+
+																	<i
+																		class="bi bi-calendar me-3 fs-5 w-auto text-white align-self-center"
+																	></i>
+																	<!-- ? Date  -->
+																	<div
+																		class="me-3"
+																	>
+																		14/12/2017
+																	</div>
+																</div>
+																<!-- ? 2) Eye and Number of Visits -->
+																<div
+																	class="d-flex align-items-center justify-content-start gap-3 ms-2"
+																>
+																	<i
+																		class="bi bi-eye me-3 fs-5 w-auto text-white align-self-center"
+																	></i>
+																	<span
+																		>0</span
+																	>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item">
+														<!-- ? Image of the Carousel Item -->
+														<div>
+															<img
+																src="./assets/imgs/07.Carousel.2.jpg"
+																alt="فعالية قطاع الزراعي"
+																class="mb-3 text-black"
+															/>
+														</div>
+														<!-- ? Text -->
+														<div
+															class="text-black fs-5 mb-1"
+														>
+															اقامة المنتدى
+															والمعرض الزراعي
+															الأول من نوعه في
+															عمان
+														</div>
+														<!-- ? Time Calendar -->
+														<div
+															class="text-carousel-footer bg-carousel-footer py-2 d-flex align-items-center justify-content-between"
+														>
+															<!-- ? 1) Image && Date -->
+															<div
+																class="d-flex align-items-center justify-content-start"
+															>
+																<!-- ? Calendar Image -->
+
+																<i
+																	class="bi bi-calendar me-3 fs-5 w-auto text-white align-self-center"
+																></i>
+																<!-- ? Date  -->
+																<div
+																	class="me-3"
+																>
+																	14/12/2017
+																</div>
+															</div>
+															<!-- ? 2) Eye and Number of Visits -->
+															<div
+																class="d-flex align-items-center justify-content-start gap-3 ms-2"
+															>
+																<i
+																	class="bi bi-eye me-3 fs-5 w-auto text-white align-self-center"
+																></i>
+																<span>0</span>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<section
+													class="site-owl__dots"
+													aria-label="أحدث الأخبار"
+												>
+													<div
+														id="first-carousel-dots"
+														class="owl-dots site-owl__dots-host"
+													></div>
+												</section>
+											</section>
+
+											<!-- ? We will use the Custom Buttons instead of the Owl Carousel Buttons (Buttons with: id="first-carousel-prev" and id="first-carousel-next")-->
+											<!--<section
+												class="site-owl__arrows"
+												aria-label="أحدث الأخبار"
+											>
+												<button
+													type="button"
+													id="first-carousel-prev"
+													class="site-owl__arrow"
+												>
+													…
+												</button>
+												<button
+													type="button"
+													id="first-carousel-next"
+													class="site-owl__arrow"
+												>
+													…
+												</button>
+											</section>-->
+										</div>
 									</div>
+								</div>
+
+								<!-- ! Second Carousel Fill below the Header -->
+								<div class="row">
+									<div class=""></div>
 								</div>
 							</div>
-							<div class="col-lg col-sm-12">
-								<div
-									class="bg-section-bar text-white d-flex gap-3 align-items-center py-2 fs-5 justify-content-between"
-								>
-									<div
-										class="d-flex gap-3 align-items-center mx-lg-3 mx-sm-1"
-									>
-										<span
-											><img
-												src="./assets/imgs/06.2.star-calendar.png"
-												alt="news-icon"
-										/></span>
-										<p class="d-inline-block mb-0">
-											أحدث الفعاليات
-										</p>
-									</div>
-									<div class="d-inline-block">
-										<a
-											href="#"
-											class="text-white text-decoration-none show-all"
-											>عرض الكل</a
+							<div class="col-lg col-sm-12 bg-light-grey">
+								<!-- ? **************** Header of the Posts (أحدث الفعاليات) Section -->
+								<div class="row">
+									<div class="col-12 bg-light">
+										<div
+											class="bg-section-bar text-white d-flex gap-3 align-items-center py-2 fs-5 justify-content-between mb-2"
 										>
+											<div
+												class="d-flex gap-3 align-items-center mx-lg-3 mx-sm-1"
+											>
+												<span
+													><img
+														src="./assets/imgs/06.2.star-calendar.png"
+														alt="news-icon"
+												/></span>
+												<p class="d-inline-block mb-0">
+													أحدث الفعاليات
+												</p>
+											</div>
+											<div class="d-inline-block">
+												<a
+													href="#"
+													class="text-white text-decoration-none show-all ps-2"
+													>عرض الكل</a
+												>
+											</div>
+										</div>
 									</div>
 								</div>
+								<!-- ? **************** Posts (أحدث الفعاليات) Section -->
 								<div class="row">
-									<a href="" class="col-12"
-										>1Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Excepturi consectetur,
-										quis ex sint sit quos nulla aliquid
-										cupiditate ipsa ipsam?</a
-									>
+									<div class="col-12">
+										<div class="row">
+											<div
+												class="col-12 col-md-6 pt-2 bg-light-grey ps-2 ps-lg-4 pb-4 d-flex flex-column gap-2"
+											>
+												<div
+													class="row mb-0 bg-white pt-2 pb-3 gx-0 pe-2"
+												>
+													<div class="col-6">
+														<img
+															src="./assets/imgs/09.post1.jpg"
+															alt="card-1"
+															class="img-fluid"
+														/>
+													</div>
+
+													<div class="col-6">
+														<p
+															class="align-self-start text-black align-self-stretch fs-6 mb-0 pe-3"
+														>
+															افتتاح اليوم العلمي
+															في نقابة المهندسين
+															الزراعيين
+														</p>
+													</div>
+												</div>
+												<div class="row mb-0 gx-0">
+													<div class="col-12">
+														<div
+															class="row g-2 fs-5 text-black bg-light-grey"
+														>
+															<div class="col-6">
+																<div
+																	class="bg-white d-flex align-items-center justify-content-start gap-2 post-font-color p-2 h-100"
+																>
+																	<img
+																		src="./assets/imgs/10.post-calendar-icon.png"
+																		alt="calendar-icon"
+																		class="img-fluid post-meta-icon"
+																	/>
+																	<span
+																		>11/12/2017</span
+																	>
+																</div>
+															</div>
+															<div class="col-6">
+																<div
+																	class="bg-white d-flex align-items-center justify-content-start gap-2 post-font-color p-2 h-100"
+																>
+																	<img
+																		src="./assets/imgs/10.post-clock-icon.png"
+																		alt="clock-icon"
+																		class="img-fluid post-meta-icon"
+																	/>
+																	<span
+																		>12:00
+																		AM</span
+																	>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row mb-0 gx-0">
+													<div
+														class="col-12 d-flex align-items-center justify-content-start gap-2 bg-white px-2 py-2"
+													>
+														<img
+															src="./assets/imgs/10.post-building-icon.png"
+															alt="building-icon"
+															class="img-fluid post-meta-icon"
+														/>
+														<p
+															class="fs-6 post-font-color mb-0"
+														>
+															نقابة المهندسين
+															الزراعيين
+														</p>
+													</div>
+												</div>
+											</div>
+											<div
+												class="col-12 col-md-6 pt-2 bg-light-grey ps-2 ps-lg-4 pb-4 d-flex flex-column gap-2"
+											>
+												<div
+													class="row mb-0 bg-white pt-2 pb-3 gx-0 pe-2"
+												>
+													<div class="col-6">
+														<img
+															src="./assets/imgs/09.post2.jpg"
+															alt="card-2"
+															class="img-fluid"
+														/>
+													</div>
+													<div class="col-6">
+														<p
+															class="text-black fs-6 mb-0 pe-3"
+														>
+															افتتاح الورشة
+															التدريبية الثالثة
+															لتصنيع الشوكلاته
+														</p>
+													</div>
+												</div>
+												<div class="row mb-0 gx-0">
+													<div class="col-12">
+														<div
+															class="row g-2 fs-5 text-black bg-light-grey"
+														>
+															<div class="col-6">
+																<div
+																	class="bg-white d-flex align-items-center justify-content-start gap-3 post-font-color p-2 h-100"
+																>
+																	<img
+																		src="./assets/imgs/10.post-calendar-icon.png"
+																		alt="calendar-icon"
+																		class="img-fluid post-meta-icon"
+																	/>
+																	<span
+																		>26/11/2017</span
+																	>
+																</div>
+															</div>
+															<div class="col-6">
+																<div
+																	class="bg-white d-flex align-items-center justify-content-start gap-3 post-font-color p-2 h-100"
+																>
+																	<img
+																		src="./assets/imgs/10.post-clock-icon.png"
+																		alt="clock-icon"
+																		class="img-fluid post-meta-icon"
+																	/>
+																	<span
+																		>12:00
+																		AM</span
+																	>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row mb-0 gx-0">
+													<div
+														class="col-12 d-flex align-items-center justify-content-start gap-3 bg-white px-2 py-2"
+													>
+														<img
+															src="./assets/imgs/10.post-building-icon.png"
+															alt="building-icon"
+															class="img-fluid post-meta-icon"
+														/>
+														<p
+															class="fs-6 post-font-color mb-0"
+														>
+															نقابة المهندسين
+															الزراعيين
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="row">
-									<a href="" class="col-12"
-										>2Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Excepturi consectetur,
-										quis ex sint sit quos nulla aliquid
-										cupiditate ipsa ipsam?</a
-									>
+								<!-- ? **************** Ads Section -->
+
+								<div class="row bg-light-grey">
+									<!-- ! First Column -->
+									<div class="col-4">
+										<div class="row">
+											<div class="col-12 mb-2">
+												<img
+													src="./assets/imgs/11.1.Advertisemnt.small.png"
+													alt="ad1"
+													class="img-fluid w-100"
+												/>
+											</div>
+											<div class="col-12">
+												<img
+													src="./assets/imgs/11.1.Advertisemnt.small.png"
+													alt="ad1"
+													class="img-fluid w-100"
+												/>
+											</div>
+										</div>
+									</div>
+									<!-- ! Second Column -->
+									<div class="col-4">
+										<div class="row">
+											<div class="col-12">
+												<img
+													src="./assets/imgs/11.2.Advertisemnt.big.png"
+													alt="ad1"
+													class="img-fluid w-100"
+												/>
+											</div>
+										</div>
+									</div>
+									<!-- ! Last Column -->
+									<div class="col-4">
+										<div class="row">
+											<div class="col-12 mb-2">
+												<img
+													src="./assets/imgs/11.1.Advertisemnt.small.png"
+													alt="ad1"
+													class="img-fluid w-100"
+												/>
+											</div>
+											<div class="col-12">
+												<img
+													src="./assets/imgs/11.1.Advertisemnt.small.png"
+													alt="ad1"
+													class="img-fluid w-100"
+												/>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -564,10 +938,139 @@
 		<!--
 			<footer> — site-wide footer.
 		-->
-		<footer class="site-footer">
-			<div class="site-footer__inner container py-3">
-				© Your name — footer colors from theme tokens.
-			</div>
+		<footer class="text-white py-3 px-2">
+			<!-- ! First Footer -->
+			<section class="pb-4 site-footer" dir="rtl">
+				<!-- RTL flex row: first col = inline-start (right), store col = inline-end (left). -->
+				<div
+					class="row align-items-start justify-content-between flex-wrap flex-md-nowrap g-2"
+				>
+					<!-- ! For Links && Navigation -->
+					<div class="col-12 col-md min-w-0">
+						<!-- ! For alining start of (مواقع تهمك) && Lists -->
+						<div class="col-12 fs-2 me-4 mb-3">مواقع تهمك</div>
+						<!-- ! For Links Lists -->
+						<div
+							class="col-12 border-bottom border-white border-1 mb-2"
+						>
+							<div class="row flex-wrap flex-md-nowrap g-2 mb-3">
+								<div class="col-auto flex-shrink-0">
+									<ul class="mb-0 fs-4 footer-links-bullets">
+										<li class="mb-lg-2">
+											<a
+												href="#"
+												class="text-white fs-5 text-decoration-none"
+												>استبيان رضى العملاء</a
+											>
+										</li>
+										<li class="mb-lg-2">
+											<a
+												href="#"
+												class="text-white fs-5 text-decoration-none"
+												>التقارير المالية</a
+											>
+										</li>
+										<li class="mb-lg-2">
+											<a
+												href="#"
+												class="text-white fs-5 text-decoration-none"
+												>مركز العربية للتدريب
+												والاستشارات</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="col">
+									<ul class="fs-4 footer-links-bullets">
+										<li class="mb-lg-2">
+											<a
+												href="#"
+												class="text-white fs-5 text-decoration-none"
+												>تسجيل الموردين</a
+											>
+										</li>
+										<li class="mb-lg-2">
+											<a
+												href="#"
+												class="text-white fs-5 text-decoration-none"
+												>السلامة والصحة المهنية</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- ! For fast concatenated links by | (pipe) -->
+						<div
+							class="col-12 mt-3 d-flex flex-wrap justify-content-start gap-2 text-decoration-none last-nav-links"
+						>
+							<a
+								href="#"
+								class="text-decoration-none text-white fs-4"
+							>
+								<span class="me-2">
+									عن القطاع الزراعي &nbsp;&nbsp; |
+								</span>
+							</a>
+							<a
+								href="#"
+								class="text-decoration-none text-white fs-4"
+							>
+								<span> أحدث الأخبار &nbsp;&nbsp; |</span>
+							</a>
+							<a
+								href="#"
+								class="text-decoration-none text-white fs-4"
+							>
+								<span> احدث الفعاليات &nbsp;&nbsp; |</span>
+							</a>
+							<a
+								href="#"
+								class="text-decoration-none text-white fs-4"
+							>
+								<span> اتصل بنا &nbsp;&nbsp; |</span>
+							</a>
+						</div>
+					</div>
+					<!-- ! Store badges: inline-end = visual left in RTL; intrinsic width (no col-12 stretch) -->
+					<div
+						class="col-12 col-md-auto flex-shrink-0 d-flex flex-column align-items-center align-items-md-end gap-3 gap-md-4 mt-3 mt-md-0"
+					>
+						<p class="fs-2 ms-3">
+							تحميل التطبيق الخاص بدليل الشركات
+						</p>
+						<a href="#">
+							<img
+								src="./assets/imgs/12.googleplay.png"
+								alt="متجر Google Play"
+								class="img-fluid ms-3"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="./assets/imgs/12.appstore.png"
+								alt="متجر App Store"
+								class="img-fluid ms-3"
+							/>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ! Second Footer -->
+			<section class="footer-border mt-1">
+				<div
+					class="d-flex flex-wrap bg-white text-black justify-content-center align-items-center gap-2 fs-4 py-3 px-2 text-center"
+				>
+					جميع الحقوق محفوظة لنقابة المهندسين الزراعين, © 2026 | تصميم
+					و تطوير
+					<img
+						src="./assets/imgs/13.company-footer-logo.png"
+						alt="logo-dev"
+						class="img-fluid"
+					/>
+				</div>
+			</section>
 		</footer>
 
 		<script src="./js/jquery.min.js"></script>
@@ -598,6 +1101,30 @@
 				});
 				$("#site-owl-hero-next").on("click", function () {
 					$hero.trigger("next.owl.carousel", [600]);
+				});
+
+				var $first = $("#first-carousel");
+				$first.owlCarousel({
+					rtl: true,
+					loop: true,
+					margin: 10,
+					nav: false,
+					dots: false,
+					dotsContainer: "#first-carousel-dots",
+					autoplay: true,
+					autoplayTimeout: 5000,
+					autoplayHoverPause: true,
+					smartSpeed: 600,
+					responsive: {
+						0: { items: 1 },
+					},
+				});
+
+				$("#first-carousel-prev").on("click", function () {
+					$first.trigger("next.owl.carousel", [600]);
+				});
+				$("#first-carousel-next").on("click", function () {
+					$first.trigger("prev.owl.carousel", [600]);
 				});
 			});
 		</script>
